@@ -1,4 +1,4 @@
-namespace CustomMediator.Net.Tests
+namespace Mediator.Net.Tests
 {
     public class UnitTest1
     {
