@@ -14,5 +14,11 @@ namespace CustomMediator.Example
         {
             _mediator = mediator;
         }
+
+        public void Test()
+        {
+            object obj = new { Name = "Iraklis", Number = 1 };
+            _mediator.Send(obj);
+        }
     }
 }

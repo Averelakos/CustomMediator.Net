@@ -2,6 +2,15 @@
 
 // The client code.
 using CustomMediator.Example;
+using Mediator.Net;
+using Mediator.Net.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+ServiceCollection services = new ();
+services.AddScoped<IMediator, MediatorNet>();
+
+BaseComponent baseComponent = new BaseComponent ();
+baseComponent.SetMediator(new MediatorNet());
+baseComponent.Test();
 
 Componenent1 component1 = new Componenent1();
 Componenent2 component2 = new Componenent2();
